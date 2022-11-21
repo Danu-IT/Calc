@@ -15,7 +15,7 @@ interface CalculatorProps {}
 export const Calculator: FC<CalculatorProps> = ({}) => {
   const [calculate, setCalculate] = useState<calculateProps>(inintialState);
   useEffect(() => {
-    console.log(calculate.result, 'result')
+    console.log(calculate.result, 'results')
     console.log(calculate.value, 'value')
   },[calculate.result, calculate.value])
 
